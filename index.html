@@ -1,101 +1,130 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Matthew McMullin 61011279</title>
-        <style>
-            #main-footer{
-                text-align: center;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>Matthew McMullin</h1>
-        <hr/>
-        <br style="margin-top: 5px;">
-        <img style="width: 150px" src="https://avatars1.githubusercontent.com/u/43027025?s=460&v=4">
-        <p>Test Paragraph Blah Blah</p>
-        <!--List Example-->
-        <h2>About Me</h2>
-        <ul>
-            <li>Studying Computer Innovation Engineering at KMITL</li>
-            <li>Thai American Student</li>
-            <li>ha</li>
-            <li>haha</li>
-            <li>hahaha</li>
-        </ul>
-        <!--Table Example-->
-        <table>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Age</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Matthew John McMullin</td>
-                    <td>61011279@kmitl.ac.th</td>
-                    <td>20</td>
-                </tr>
-            </tbody>
-        <br>
-        </table>
-        <!--Forms Example-->
-        <form action="">
-            <div>
-                <label>First Name</label>
-                <input type="text" name="firstName" placeholder="Enter Firstname">
-                <br style="margin-top: 20px;">
-            </div>
-            <div>
-                <label>Last Name</label>
-                <input type="text" name="lastName" placeholder="Enter Lastname">
-                <br style="margin-top: 10px;">
-            </div>
-            <div>
-                <label>Email</label>
-                <input type="email" name="email" placeholder="Enter Email">
-                <br style="margin-top: 10px;">
-            </div>
-            <br>
-            <div>
-                <label>Message</label>
-                <textarea name="message"></textarea>
-                <br style="margin-top: 10px;">
-            </div>
-            <div>
-                <label>Gender</label>
-                <select name="gender">
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                </select>                  
-                <br style="margin-top: 10px;">
+<head>   
+    <title>Matthew Mc. 61011279</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        div.header{
+            background-color:grey;
+            position: relative;
+            height: 175px
+        }
+        div.sidebar{
+            width: 20%;
+            background-color: lightgrey;
+            height: 1300px;
+            /* margin-left: 10px;    */
+            left: 8px;
+            position: absolute;  
+            top: 150px;     
+        }
+        div.nametitle{
+            top: 25px;
+            left: 40%;
+            position: absolute;
+        }
+        div.contactinfo{
+            /* top: 30%; */
+            margin-top: 0px;
+            left:10px;
+            width: 95%;
+            position: absolute;    
+        }  
+        ul{
+            font-size: 20px;
+        }
+        div.content{
+            left:21.5%;
+            width: 78%;
+            position: absolute;
+        }
+        hr{
+            margin-right: 10px;           
+        }
+        div.column{
+            float: left;
+            width: 50%;   
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="header">
+        <div class="nametitle">
+            <h1 style="text-align: center; font-size: 50px; margin-bottom: 0px;">Matthew Mc.</h1>
+            <h3 style="text-align: center; margin-top: 0px; font-size: 30px;">22 September 1999 Bangkok Thailand</h3>           
+        </div>       
+    </div>
+    <div class="sidebar">
+        <div>
+            <img src="https://www.mantruckandbus.com/fileadmin/_processed_/2/c/csm_kleiss-interview-header_f8b7588730.jpg" style="display: block;margin-left: auto;
+            margin-right: auto; width: 75%; margin-bottom: 100px;">
+        </div>
+        <div class="contactinfo">
+            <h2 style="margin-bottom: 8px;">CONTACT</h2>
+            <hr style="margin-top: 0px;" size="5px" color="black">           
+            <div>                
+                <p style="font-size: 25px;"><i class="material-icons">home</i>  123 Your Street, Your City, 12345</p>
+                <p style="font-size: 25px;"><i class="fa fa-phone" style="font-size: 24px;"></i>  (123) 456 7890</p>
             </div>
             <br>
+            <h2 style="margin-bottom: 8px;">ABOUT ME</h2>
+            <hr style="margin-top: 0px;" size="5px" color="black">  
+            <p style="font-size:20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum maiores dolorem nisi doloribus laborum rem, nostrum modi officia possimus repellat dolor facere mollitia sapiente? Asperiores alias quo magni eum atque.</p>
             <div>
-                <label>Age</label>
-                <input type="age" name = "age" value = "0">
+                <h2 style="margin-bottom: 8px;">COMPUTING</h2>
+                <hr style="margin-top: 0px;" size="5px" color="black">
+                <ul>
+                    <li>Mac OS / IOs</li>
+                    <li>Windows</li>
+                    <li>Social Media</li>
+                    <li>Microsoft Office</li>
+                    <li>Adobe Photoshop</li>
+                </ul>
             </div>
-            <br>
-            <div>
-                <label>Age</label>
-                <input type="date" name = "birthday">
-            </div>
-            <br>
-            <input type="submit" name="submit" value="Submit">
-        </form>
-        <br>
-        <button onclick="window.location='testpage.html'">Click Me Please</button>
-        
-        <!--Quotations-->
-        <blockquote>
-            If it doesnt work google it
-            <br>
-            --Someone
-        </blockquote>
-        <footer id="main-footer">
-            <p>Copyright &copy; 2017 Matthew McMullin</p>
-        </footer> 
-    </body>
+            <div style="height:100px;"></div>
+        </div>
+    </div>
+    <br>
+    <div class="content">
+    <div>
+        <h2>EDUCATION</h2>
+        <hr style="margin-top: 0px;" size="5px" color="black">  
+        <span><p style="font-size: 22px;"><b><i>08/14-08/17</i></b> ------ lorem</p></span>
+        <span><p style="font-size: 22px;"><b><i>08/14-08/17</i></b> ------ lorem</p></span>
+        <span><p style="font-size: 22px;"><b><i>08/14-08/17</i></b> ------ lorem</p></span>
+        <span><p style="font-size: 22px;"><b><i>08/14-08/17</i></b> ------ lorem</p></span>
+        <span><p style="font-size: 22px;"><b><i>08/14-08/17</i></b> ------ lorem</p></span>              
+    </div>
+    <br>
+    <div>
+        <h2>EXPERIENCE</h2>
+        <hr style="margin-top: 0px;" size="5px" color="black"> 
+        <span><p style="font-size: 22px;"><b><i>08/14-08/17</i></b> ------ lorem</p></span>
+        <span><p style="font-size: 22px;"><b><i>08/14-08/17</i></b> ------ lorem</p></span>
+    </div>
+    <br>
+    <div>
+        <h2>PROJECTS</h2>
+        <hr style="margin-top: 0px;" size="5px" color="black"> 
+        <span><p style="font-size: 22px;"><b><i>08/14-08/17</i></b> ------ lorem</p></span>
+        <span><p style="font-size: 22px;"><b><i>08/14-08/17</i></b> ------ lorem</p></span>
+    </div>
+    <br>
+    <div>
+        <div class="column">
+            <h2>SOFTSKILLS</h2>
+            <hr style="margin-top: 0px;" size="5px" color="black"> 
+            <span><p style="font-size: 22px;"><b><i>08/14-08/17</i></b> ------ lorem</p></span>
+
+        </div>
+        <div class="column">
+            <h2>LANGUANGE</h2>
+            <hr style="margin-top: 0px;" size="5px" color="black"> 
+            <span><p style="font-size: 22px;"><b><i>08/14-08/17</i></b> ------ lorem</p></span>
+        </div>
+    </div>
+</div>
+</body>
 </html>
