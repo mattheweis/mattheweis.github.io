@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthew Mc. 61011279</title>
+    <style>
+        div.box{
+            border: 1px black solid;
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h3 style="padding-left: 10px;">Quiz</h3>
+        <p style="padding: 10px; font-size: 20px; margin-bottom: 0px;" id="question"></p>
+        <form>
+            <input type="text" style="width: 80%; margin-left: 5%;" id="textInput">
+        </form>
+        <button type="submit" style="margin-left: 5%;" onclick="checkAns()">Submit</button>
+        <p id="result" style="padding: 10px;margin-top: 0px;"></p>
+    </div>
+    <script>
+        var x1 = Math.round(Math.random()*100);
+        var x2 = Math.round(Math.random()*100);
+        var ans = x1+x2;
+        document.getElementById("question").innerText = `What is the answer of ${x1} + ${x2}?`;
+
+    function checkAns(){
+        if(parseInt(document.getElementById("textInput").value)==ans){
+            document.getElementById("result").innerText = "Good Job!"    
+            document.getElementById("result").style.color = "green"   
+        }
+        else{
+            document.getElementById("result").innerText = "Wrong!!!!"
+            document.getElementById("result").style.color = "red"
+        }
+
+    }  
+</script>
+</body>
+</html>
