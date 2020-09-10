@@ -20,7 +20,8 @@
         <form>
             <input type="text" style="width: 80%; margin-left: 5%;" id="textInput">
         </form>
-        <button type="submit" style="margin-left: 5%;" onclick="checkAns()">Submit</button>
+        <button type="submit" style="margin-left: 5%; float: left;" onclick="checkAns()">Submit</button>
+        <button onclick="reload()">Replay</button>
         <p id="result" style="padding: 10px;margin-top: 0px;"></p>
     </div>
     <script>
@@ -40,6 +41,13 @@
         }
 
     }  
+    function reload(){
+        x1 = Math.round(Math.random()*100);
+        x2 = Math.round(Math.random()*100);
+        ans = x1+x2;
+        document.getElementById("question").innerText = `What is the answer of ${x1} + ${x2}?`;
+        document.getElementById('textInput').value = '';
+    }
 </script>
 </body>
 </html>
