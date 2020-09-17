@@ -12,6 +12,7 @@
             border-radius: 10px;
         }
     </style>
+     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 <body>
     <div class="box">
@@ -28,16 +29,16 @@
         var x1 = Math.round(Math.random()*100);
         var x2 = Math.round(Math.random()*100);
         var ans = x1+x2;
-        document.getElementById("question").innerText = `What is the answer of ${x1} + ${x2}?`;
+        $("#question").text(`What is the answer of ${x1} + ${x2}?`)
 
     function checkAns(){
-        if(parseInt(document.getElementById("textInput").value)==ans){
-            document.getElementById("result").innerText = "Good Job!"    
-            document.getElementById("result").style.color = "green"   
+        if($("#textInput").val()==ans){
+            $("#result").text("GoodJob!!!")
+            $("#result").css("color","green")
         }
         else{
-            document.getElementById("result").innerText = "Wrong!!!!"
-            document.getElementById("result").style.color = "red"
+            $("#result").text("Wrong!!!")
+            $("#result").css("color","red")
         }
 
     }  
@@ -45,9 +46,9 @@
         x1 = Math.round(Math.random()*100);
         x2 = Math.round(Math.random()*100);
         ans = x1+x2;
-        document.getElementById("question").innerText = `What is the answer of ${x1} + ${x2}?`;
-        document.getElementById('textInput').value = '';
-        document.getElementById('result').innerText = '';
+        $("#question").text(`What is the answer of ${x1} + ${x2}?`)
+        $("#textInput").val('')
+        $("#result").val('')
     }
 </script>
 </body>
